@@ -13,6 +13,7 @@ public class ConceptosPOO {
         /*
          Usando Visual Studio Code
          */
+        System.out.println("Hola Mundo");
     }
     
 }
