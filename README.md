@@ -4,6 +4,7 @@
 Se define como un paradigma que permite realizar una abstracción de la realidad, que se puede implementar en una aplicación se _software_ 
 con el fin de resolver problemas mediante el uso de un lenguaje de programación. 
 ### Paquetes: ###
+<<<<<<< HEAD
 Un __paquete__ es un contenendor de clases. Se utiliza para ordenar el código de forma consistente de acuerdo a los servicios implementados.
 
 ` Package MiPaquete;`
@@ -50,3 +51,7 @@ clases implementadas en el mismo paquete.
 
 ### Métodos ###
 Los métodos hacen referencia a los servicios que se le incluyen a la clase. En estos métodos se implemente el código necesario del servicio. Un método contiene los siguientes elementos. 
+=======
+Un __paquete__ es un contenendor de clases.
+
+>>>>>>> ece848957bd87cee3b3ce09d787510c6578effe8
