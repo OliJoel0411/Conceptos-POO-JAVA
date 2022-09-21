@@ -52,4 +52,42 @@ clases implementadas en el mismo paquete.
 ### Métodos ###
 Los métodos hacen referencia a los servicios que se le incluyen a la clase. En estos métodos se implemente el código necesario del servicio. Un método contiene los siguientes elementos. 
 
+1. __Visibilidad:__ Se debe establecer si el método es _Private,_ _Public,_ o _Protected._
+2. __Retorno:__ Un método puede retornar información. Si el método no retorna información se debe colocar la palabra " _Void_ ". El retorno puede ser de tipo primitivo o de una clase. Si un método tiene retorno, en la implementación del método, debe estar presente la palabra reservada `return`.
+3. __Nombre:__ Identificador del método en la clase. 
+4. __Parametros:__ Un método puede recibir de _0_ a _n_ parámetros. Un parámetro puede ser un tipo primitivo de dato o la declaración de una clase. Los parámetros pueden estar separados por comas. 
+
+Cada metodo implementa un código que debe estar contendio entre `{}`, la sintáxis de los métodos es la siguiente. 
+
+```java
+    // método publico sin retorno y sin parámetros
+    public void miMetodo(){
+        instruccion 1;
+        instruccion 2;
+        ...
+        instruccion n;
+    }
+
+    // méotdo privado con retorno int y sin parametros
+    private int miMetodo(){
+        instruccion 1;
+        instruccion 2;
+        ...
+        instruccion n;
+
+        return valor int;
+    }
+
+    // método privado con retorno int y con parametros 
+    private int miMetodo(int parametro1, boolean parametro2, miClase parametro3){
+        instruccion 1;
+        instruccion 2;
+        ...
+        instruccion n;
+
+        return valor int;
+    }
+```
+
+
 
