@@ -158,3 +158,45 @@ Public class MiClase(){
 Por ejemplo el atributo “PI” cuyo valor se encuentra implementado
 en la clase del API de Java Math, puede ser accedido sin requerir
 instancia de la clase Math y su valor es constante.
+
+### Clasificación de Métodos 
+
+Los metodos se pueden clasificar en 4 tipos que son los siguientes:
+1. __Constructores:__ Un constructor es el primer método que se ejecuta al realizar la instancia del objeto. Uno de los usos principales del constructor es la inicialización de los atributos de la clase. El método constructor debe tener visibilidad pública y no posee retorno. La sintaxis es la siguiente:
+
+```java
+public class miClase{
+    // Definición de atributos
+    private int atributo1;
+    private int atributo2;
+
+    // Definicion de método constructor
+    public miClase(){
+        this.atributo1 = 0;
+        this.atributo2 = 0;
+    }
+}
+```
+2. __Consultores:__ Un consultor es el método que permite retornar el valor de un atributo con visibilidad _private_ al aplicar el concepto de encapsulamiento. La sintaxis es la siguiente:
+```java
+public class miClase{
+    //Difinición de atributos
+    private atributo1;
+    private atributo2;
+
+    //Método constructor
+    public miClase(){
+        this.atributo1 = 0;
+        this.atributo2 = 0;
+    }
+
+    //Método consultor
+    public int getAtributo1(){
+        return this.atributo1;
+    }
+    public int getAtributo2(){
+        return this.atributo2;
+    }
+}
+```
+3. 
