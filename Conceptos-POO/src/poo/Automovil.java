@@ -19,6 +19,7 @@ public class Automovil {
     String modelo;
     String color;
     double cilindrada;
+    int capTanqu = 40;
             
     //Creando Métodos
     
@@ -43,5 +44,15 @@ public class Automovil {
     public String frenar(){
         return this.fabricante + " " + this.modelo + "Frenando!!!";
         }
+    // Metodo para Calcular consumo de Gasolina
+    public float calcularConsumo (int km, float consum){
+        // operacion del metodo 
+        return km/(this.capTanqu * consum);
+    }
+    // Sobrecarga de metodos, unicamente cambia el tipo de argumentos que recibe
+    public float calcularConsumo (int km, int consum){
+        // operacion del metodo 
+        return km/(this.capTanqu *(consum / 100f) );
+    }
     }
 

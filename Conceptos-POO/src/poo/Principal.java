@@ -37,6 +37,13 @@ public class Principal {
         System.out.println(subaru.acelerar(1500));
         System.out.println(subaru.frenar());
         
+        // llamando al metodo para calcular la gasolina consumida por litro
+        
+        System.out.println("Kilometro por litro: " + subaru.calcularConsumo(300, 0.75f));
+        System.out.println("Kilometro por litro: " + mazda.calcularConsumo(250, 0.75f));
+        
+        System.out.println("Kilometro por litro: " + subaru.calcularConsumo(300, 75));
+        System.out.println("Kilometro por litro: " + mazda.calcularConsumo(250, 75));
       
     }
 }
