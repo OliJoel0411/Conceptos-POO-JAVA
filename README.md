@@ -199,4 +199,37 @@ public class miClase{
     }
 }
 ```
-3. 
+3. __Modificadores:__ Un modificador es el método que permite asignar valor a un atributo con visibilidad _private_ al aplicar el concepto de encapsulamiento. La sintáxis es la siguiente:
+```java
+public class miClase{
+    //Difinición de atributos
+    private atributo1;
+    private atributo2;
+
+    //Método constructor
+    public miClase(){
+        this.atributo1 = 0;
+        this.atributo2 = 0;
+    }
+
+    //Método consultor
+    public int getAtributo1(){
+        return this.atributo1;
+    }
+
+    //Método consultor
+    public int getAtributo2(){
+        return this.atributo2;
+    }
+
+    //Método modificador
+    public void setAtributo1(int atributo1){
+        this.atributo1 = atributo1;
+    } 
+
+    //Método modificador
+    public void setAtributo2(int atributo2){
+        this.atributo2 = atributo2;
+    }
+}
+```
