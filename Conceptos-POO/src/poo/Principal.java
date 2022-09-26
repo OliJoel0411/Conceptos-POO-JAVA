@@ -9,6 +9,10 @@ package poo;
 public class Principal {
     // En la clase principal se ejercutara el main que sera el encargado de ejercutar el programa
     public static void main(String[] args) {
+        // Desde aquí podremos crear " OBJETOS  "  
+        // Instanciar un objeto
         
+        Automovil auto = new Automovil();
+        System.out.println("auto = " + auto.fabricante);
     }
 }
