@@ -233,3 +233,83 @@ public class miClase{
     }
 }
 ```
+4. __Analizadores:__ Un analizador es el método que permite implementar la lógica del servicio del mismo, es decir; allí se implementan los algoritmos requeridos. La sintaxis es la siguiente:
+   
+```java
+
+public class miClase{
+    //Difinición de atributos
+    private atributo1;
+    private atributo2;
+
+    //Método constructor
+    public miClase(){
+        this.atributo1 = 0;
+        this.atributo2 = 0;
+    }
+
+    //Método consultor
+    public int getAtributo1(){
+        return this.atributo1;
+    }
+
+    //Método consultor
+    public int getAtributo2(){
+        return this.atributo2;
+    }
+
+    //Método modificador
+    public void setAtributo1(int atributo1){
+        this.atributo1 = atributo1;
+    } 
+
+    //Método modificador
+    public void setAtributo2(int atributo2){
+        this.atributo2 = atributo2;
+    }
+
+    //Método analizador 
+    public int calcularMayor(){
+        if(this.atributo1 > this.atributo2){
+            return this.atributo1;
+        }else {
+            return this.atributo2;
+        }
+    }
+}
+```
+### Sobrecarga de Métodos
+
+La sobrecarga de métodos es una característica que perminten que varios métodos en un misma clase tenga el mismo nombre. La forma en que el compilador identifica cuál es el método a utilizar en tiempo de ejecución, se debe a que estos deben poseer diferentes parámetros y/o retorno. La diferencia puede estar en el número de parámetros y/o tipo de los mismos. Por ejemplo se plantean los siguientes métodos sobrecargados.
+
+```java
+//Método sobrecargado 1. Sin parámetro y sin retorno.
+public void miMetodo(){
+}
+//Método sobrecargado 2. Con parámetro y con retorno int.
+public int miMetodo(int parametro1){
+}
+//Método sobrecargado 3. Con parámetros y con retorno boolean.
+public boolean miMetodo(int parametro1, int parametro2){
+}
+//Método sobrecargado 4. Con parámetros diferentes a la
+sobrecarga 3 y con retorno boolean.
+public boolean miMetodo(int parametro1, long parametro2){
+}
+```
+### Recursividad
+La recursividad es la características en la programación que permite hacer un llamado a un método desde el mismo método. Esta característica simplifica el desarrollo. Cada llamado recursivo equivale a una iteración en una estructua de repetición como el _"while"_ o el _"for"_. Tiene una ventaja de utilizar casi los mismos recursos que un proceso iterativo regular. Por otro lado existen algoritmos que necesariamente deben ser implementados de forma recursiva como algoritmos fractales  y árboles. 
+
+Para aplicar el concepto de recursividad, el método debe necesariamente retornar un valor, recibir por parametros al menos un valor, implementar una condición de ruptura del proceso recursivo e implementar una función recursiva. 
+
+Por ejemplo si se desea implementar el algoritmo del factorial se podría implementar el siguiente método a resolver el algoritmo.
+
+```java
+public long factorial(long n) {
+long fact=1;
+for(int i=1; i<n; i++){
+fact *= i;
+}
+return fact;
+}
+```
