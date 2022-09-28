@@ -356,7 +356,50 @@ Por ejemplo, si se tiene una clase _Triangulo_, puede tener los siguientes atrib
 * Base
 * Altura
 Podria tener los métodos siguientes: 
+
 * calcularArea
 * calcularPerimetro
+  
 En este por ejemplo la clase _Triangulo_ se encuentra altamente cohesionada ya que los atributos y métodos hacen referencia directamente a concepto abstraído que es el triangulo. 
 
+Si se quisiera agregar el método calcularVolumen() la cohesión se perdería porque el triangulo es una figura plana, que no posee volumen. Dicho método deberia estar alojado en la clase Pirámide. 
+
+
+### Manejo de Excepciones
+
+En el lenguaje JAVA, una _"Excepción"_ hace referencia a una condición anormal que se produce en tiempo de ejecución de la aplicación. Algunas excepciones son denominadas fatales, cuales provocan la finalizacion de la ejecución de la aplicación. Generalmente, la excepciones se generan porque falla la operación como consecuencia de un error de uso de la aplicación por parte del usuario. Para ilustrar el concepto, considere los siguientes ejemplos. 
+
+* Si el usuario intenta abrir un archivo he ingresa de forma incorrecta la ruta del mismo, la aplicación presenta una excepción que debe controlarse para presentarle información de error de ruta del archivo del usuario. 
+* Si el usuario desea ingresar un número para realizar una operación aritmética, pero erroneamente ingresa un carácter, la aplicación presenta una exceptción de formato de número que debe controlarse para indicar al usuario que no se puede realizar la operación arimtética.
+
+Las excepciones se representan mediante clases derivadas de la clase _Throwable_, sin embargo, las clases con las que se desarrolla, se derivan de la clase _Exception_ que pertenece al paquete __java.lang__
+
+#### Estructuras _Try, catch y finally_
+Las Excepciones en Java deben ser capturadas mediante el uso de las estructuras _"try", "catch" y "finally"_. En el bloque _try_ se debe implementar el código del proceso que se desea ejecutar. En el bloque _catch_ se implementa el código alterno que se ejecutará en caso de que se presente una situación anormal o excepción en la ejecución del código implementado en el bloque _try_. Es posible tener varios bloques _catch_ que resuelvan diferentes tipos de excepciones. El bloque _finally_ es opcional pero en caso de implementarse, este se ejecutará independientemente, si se presenta o no excepción. Este se implementa posterior a la implementación del bloque _try_ y del bloque _catch_. La sintáxis es la siguiente:
+ ```java
+ public void miMetodo(){
+..
+try{
+instrucción 1;
+instrucción 2;
+..
+instrucción n;
+}catch(Exception e){
+//Instrucciones del manejo de la excepcion
+}finally {
+//Instrucciones que se ejecutan en cualquiera de los dos casos
+}
+...
+}
+ ```
+
+ # Ejercicios Propuestos...
+ 1. Implemente una clase denominada _Cuadrado_ que
+contenga un atributo privado, dos métodos constructores
+sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del cuadrado.
+2. Implemente una clase denominada _Triangulo_ que
+contenga un atributo privado, dos métodos constructores
+sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del Triangulo.
+3. Implemente una clase denominada _Rectángulo_ que
+contenga un atributo privado, dos métodos constructores
+sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del Rectángulo.
