@@ -355,6 +355,7 @@ Por ejemplo, si se tiene una clase _Triangulo_, puede tener los siguientes atrib
 * Id
 * Base
 * Altura
+  
 Podria tener los métodos siguientes: 
 
 * calcularArea
