@@ -313,3 +313,50 @@ fact *= i;
 return fact;
 }
 ```
+Entonces, suponiendo que n=5 el algoritmo realiza 5 iteraciones en donde en cada iteración se presentan los siguientes resultados en las variables.
+1. Primera iteración:   fact = 1*1 = 1
+2. Segunda iteración:   fact = 1*2 = 2
+3. Tercera iteración:   fact = 2*3 = 6
+4. Cuarta iteración:    fact = 6*4 = 24
+5. Quinta iteración:    fact = 24*5 = 120
+
+También se puede hacer la implementación del algoritmo factorial de forma __*RECURSIVA:*__
+
+```java
+public long factorial(long n){
+    inf(n==1 || n==0){
+        return 1;
+    }else {
+        return n*factorial(n-1);
+    }
+}
+```
+Otra forma mas avanzada de codificar el algoritmo recursivo es la siguiente:
+```java
+public long factorial(long n){
+    return (n==1)?1:n*factorial(n-1);
+}
+```
+Entonces, suponiendo que n = 5, el algoritmo realiza 5 llamadas recursivas, en donde cada llamada se presentan los siguientes resultados.
+1. Primera llamada: retorna 5*factorial(4)
+2. Segunda llamada: retorna 4*factorial(3)
+3. Tercera llamada: retorna 3*factorial(2)
+4. Cuarta llamada: retorna 2*factorial(1)
+5. Quinta llamada: retorna 1
+
+Para hacer el primer llamado al método se puede considerar la siguiente sentencia: 
+```java
+long f = factorial(5);
+```
+### Altal Cohesión
+Es la característica de la Programación Orientada a Objetos que indica que, las propiedades y servicios de una clase deben ser consistentes con el concepto que abstrae dicha clase. 
+
+Por ejemplo, si se tiene una clase _Triangulo_, puede tener los siguientes atributos:
+* Id
+* Base
+* Altura
+Podria tener los métodos siguientes: 
+* calcularArea
+* calcularPerimetro
+En este por ejemplo la clase _Triangulo_ se encuentra altamente cohesionada ya que los atributos y métodos hacen referencia directamente a concepto abstraído que es el triangulo. 
+
