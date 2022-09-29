@@ -158,6 +158,7 @@ Public class MiClase(){
 Por ejemplo el atributo “PI” cuyo valor se encuentra implementado
 en la clase del API de Java Math, puede ser accedido sin requerir
 instancia de la clase Math y su valor es constante.
+<<<<<<< HEAD
 
 ### Clasificación de Métodos 
 
@@ -404,3 +405,5 @@ sobrecargados con y sin parámetros, métodos consultores, métodos modificadore
 3. Implemente una clase denominada _Rectángulo_ que
 contenga un atributo privado, dos métodos constructores
 sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del Rectángulo. fin.
+=======
+>>>>>>> c1fb2fc0e2c78028884e6825e8d543d537e39cd4
