@@ -404,6 +404,4 @@ contenga un atributo privado, dos métodos constructores
 sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del Triangulo.
 3. Implemente una clase denominada _Rectángulo_ que
 contenga un atributo privado, dos métodos constructores
-sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del Rectángulo. fin.
-=======
->>>>>>> c1fb2fc0e2c78028884e6825e8d543d537e39cd4
+sobrecargados con y sin parámetros, métodos consultores, métodos modificadores y métodos analizadores que calculen el área y perímetro del Rectángulo.
