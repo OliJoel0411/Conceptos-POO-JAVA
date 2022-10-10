@@ -44,8 +44,7 @@ public class Persona{
     protected String nombre
     protected String apellido
     protected String correo
-    public Persona(int id, String nombre, String apellido, 
-    String correo){
+    public Persona(int id, String nombre, String apellido, String correo){
     this.id=id;
     this.nombre=nombre;
     this.apellido=apellido;
@@ -53,10 +52,11 @@ public class Persona{
     }
     }
     public class Estudiante extends Persona{
+
     private int codigo
     private String facultad
-    public Estudiante(int id, String nombre, String apellido, 
-    String correo, int codigo, String facultad){
+    
+    public Estudiante(int id, String nombre, String apellido, String correo, int codigo, String facultad){
     super(id, nombre, apellido, correo); 
     this.codigo=codigo;
     this.facultad=facultad;
