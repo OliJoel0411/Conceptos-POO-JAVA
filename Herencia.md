@@ -20,3 +20,48 @@ Así mismo, de la clase _Cruadado_, es posible   heredar de la clase _Cubo_. De 
 De la clase _Circulo_ es posible heredar la clase _Esfera_ y _Cilindro_. La representación de herencia del caso anteriormente expuesto, en lenguaje de modelado. es la siguiente:
 
 ###### El diagrama esta adjunto en el documento _UML_Herencia_2_ 
+
+### Sentencia _Extends_
+La sentencia _Extends_ permite implementar el concepto de herencia. Se incluye para que una clase herede de otra clase. Por ejemplo, en el caso de jerarquía de herencia personal académico, debe existir una clase _persona_ y una clase _estudiante_. Al implementar la clase _estudiante_ se le debe incluir la sentencia _extends_ para que herede de la clase _persona_. La sentencia es la siguiente:
+
+```java
+public class Persona{
+    ...
+}
+public class Estudiante extends Persona{
+    ...
+}
+```
+Una vez incluida la sentencia _extends_, la clase _Estudiante_ tiene acceso a atributos y métodos protegidos de la clase _Persona_.
+
+### Sentencia _Super_ 
+
+La sentencia _"super"_ es utilizada para acceder a métedos implementados en la clase superior en el concepto de herencia. Esta sentencia es comúnmente  utilizada para acceder al constructor de la clase superior desde el constructor de la clase inferior. Por ejemplo, en la clase de jerarquía de herencia personal académico debe existir una clase _persona_ con atributos como identificación, nombre, apellido y correo, y una clase _Estudiante_ que pueda acceder a estos atributos pero  que adicionalmente, tiene atributos como código y facultad. Al implementar un constructor de la clase _Persona_ enviandole los parámetros definidos en dicha clase. La sintaxis es la siguiente: 
+
+```java  
+public class Persona{
+    protected int id;
+    protected String nombre
+    protected String apellido
+    protected String correo
+    public Persona(int id, String nombre, String apellido, 
+    String correo){
+    this.id=id;
+    this.nombre=nombre;
+    this.apellido=apellido;
+    this.correo=correo;
+    }
+    }
+    public class Estudiante extends Persona{
+    private int codigo
+    private String facultad
+    public Estudiante(int id, String nombre, String apellido, 
+    String correo, int codigo, String facultad){
+    123
+    super(id, nombre, apellido, correo); 
+    this.codigo=codigo;
+    this.facultad=facultad;
+    }
+}
+```
+En el ejemplo anterior, el constructor de la clase estudiante, hace un llamado al constructor de la clase persona asignando los valores a los atributos allí definidos.
