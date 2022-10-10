@@ -57,7 +57,6 @@ public class Persona{
     private String facultad
     public Estudiante(int id, String nombre, String apellido, 
     String correo, int codigo, String facultad){
-    123
     super(id, nombre, apellido, correo); 
     this.codigo=codigo;
     this.facultad=facultad;
