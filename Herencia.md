@@ -67,4 +67,48 @@ public class Persona{
 En el ejemplo anterior, el constructor de la clase estudiante, hace un llamado al constructor de la clase persona asignando los valores a los atributos allí definidos. 
 
 ### Sobre-Escritura de Métodos
-La sobre-escritura de métodos es una característica que se presenta en el concepto de herencia, que consiste en implementar un método de una clase superior e inferior en la jerarquía de herencia. Por ejemplo, considerando la clase _Cuadrado_ y _Cubo_ de la jerarquía de figuras geometricas que se presentan en la imagen __*UML_Herencia_3*__, es posible crear un método _gerArea_, tanto para la clase _Cuadrado_ como para la clase _Cubo_. Entonces, si se crea una referencia de la clase _Cuadrado_, dependiendo de la instancia del objeto que se crea que puede ser de _Cuadrado_ o _Cubo_, se accede al método implementado en _Cuadrado_ o en _Cubo_, respectivamente. 
+La sobre-escritura de métodos es una característica que se presenta en el concepto de herencia, que consiste en implementar un método de una clase superior e inferior en la jerarquía de herencia. Por ejemplo, considerando la clase _Cuadrado_ y _Cubo_ de la jerarquía de figuras geometricas que se presentan en la imagen __*UML_Herencia_3*__, es posible crear un método _gerArea_, tanto para la clase _Cuadrado_ como para la clase _Cubo_. Entonces, si se crea una referencia de la clase _Cuadrado_, dependiendo de la instancia del objeto que se crea que puede ser de _Cuadrado_ o _Cubo_, se accede al método implementado en _Cuadrado_ o en _Cubo_, respectivamente. La implementación de la jerarquía es la siguiente:
+
+###     _Clase Cuadrado_
+```java
+package figurasGeometricas;
+
+public class Cuadrado {
+ protected int valor1;
+
+ public Cuadrado(double valor1) {
+this.valor1=valor1;
+ }
+ public double getArea() {
+return Math.pow(this.valor1, 2);
+ }
+}
+```
+
+### Clase _Cubo_
+
+``` java
+package figurasGeometricas;
+public class Cubo extends Cuadrado {
+
+ public Cubo(double valor1) {
+super(valor1);
+ }
+
+ public double getArea() {
+return Math.pow(this.valor1, 3);
+ }
+}
+```
+La implementación anterior, sobre-escribre el método _getArea_ debido a que el área del cuadrado es diferente al área del cubo. Java identifica a cúal método sobre-escrito debe acceder en tiempo de ejecución. 
+
+##### Clases Abstractas
+
+Una clase abstracta es aquella que no ser instanciada, es decir, no se pueden crear objetos de esta clase. Se usa para permitir que otras clases hereden de esta proporcionando atributos y métodos que son comúnes de las clases heredadas. La sintáxis para la creación de una clase abstracta es la siguiente: 
+
+```java
+public abstract class FiguraGeometrica {
+ ...
+}
+```
+Una clase abstracta puede contener métodos y atributos. Sin embargo, adicionalmente puede contener métodos abstractos, los cuales son definidos pero no implementados. 
