@@ -57,10 +57,14 @@ public class Persona{
     private String facultad
     
     public Estudiante(int id, String nombre, String apellido, String correo, int codigo, String facultad){
+
     super(id, nombre, apellido, correo); 
     this.codigo=codigo;
     this.facultad=facultad;
     }
 }
 ```
-En el ejemplo anterior, el constructor de la clase estudiante, hace un llamado al constructor de la clase persona asignando los valores a los atributos allí definidos.
+En el ejemplo anterior, el constructor de la clase estudiante, hace un llamado al constructor de la clase persona asignando los valores a los atributos allí definidos. 
+
+### Sobre-Escritura de Métodos
+La sobre-escritura de métodos es una característica que se presenta en el concepto de herencia, que consiste en implementar un método de una clase superior e inferior en la jerarquía de herencia. Por ejemplo, considerando la clase _Cuadrado_ y _Cubo_ de la jerarquía de figuras geometricas que se presentan en la imagen __*UML_Herencia_3*__, es posible crear un método _gerArea_, tanto para la clase _Cuadrado_ como para la clase _Cubo_. Entonces, si se crea una referencia de la clase _Cuadrado_, dependiendo de la instancia del objeto que se crea que puede ser de _Cuadrado_ o _Cubo_, se accede al método implementado en _Cuadrado_ o en _Cubo_, respectivamente. 
