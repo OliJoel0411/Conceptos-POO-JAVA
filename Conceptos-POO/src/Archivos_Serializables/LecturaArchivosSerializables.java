@@ -1,4 +1,4 @@
-package archivosSerializables;
+package Archivos_Serializables;
 //Librerias
 import java.io.File;
 import java.io.FileInputStream;

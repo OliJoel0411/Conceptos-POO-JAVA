@@ -1,4 +1,4 @@
-package manipulacionDeArchivos;
+package Manipulacion_De_Archivos;
 
 import java.io.BufferedReader;
 import java.io.File;
