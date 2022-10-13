@@ -46,9 +46,11 @@ miArreglo[4] = 0;
 String dias[] = {“lunes”, “martes”, “miércoles”, “jueves”,
 “viernes”, “sábado”, “domingo”};
 ```
+
 |__índice__| 0| 1 | 2 | 3 | 4 | 5 | 6 |
 |----------|--|---|---|---|---|---|---|------|
 |__elemento__| "lunes" | "martes" | "miercoles" | "jueves" | "viernes" | "sabado" | "domingo" |
+
 
 ### Ejemplo Práctico con arreglos
 
