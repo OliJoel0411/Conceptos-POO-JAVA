@@ -48,7 +48,7 @@ String dias[] = {“lunes”, “martes”, “miércoles”, “jueves”,
 ```
 
 |__índice__| 0| 1 | 2 | 3 | 4 | 5 | 6 |
-|----------|--|---|---|---|---|---|---|------|
+|----------|--|---|---|---|---|---|---|
 |__elemento__| "lunes" | "martes" | "miercoles" | "jueves" | "viernes" | "sabado" | "domingo" |
 
 
